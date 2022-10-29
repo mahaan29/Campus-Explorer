@@ -1,0 +1,205 @@
+{
+  "title": "singleKeyInColumn",
+  "input": {
+    "WHERE": {
+      "OR": [
+        {
+          "AND": [
+            {
+              "GT": {
+                "courses_avg": 90
+              }
+            },
+            {
+              "IS": {
+                "courses_dept": "adhe"
+              }
+            }
+          ]
+        },
+        {
+          "EQ": {
+            "courses_avg": 95
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept"
+      ],
+      "ORDER": "courses_dept"
+    }
+  },
+  "errorExpected": false,
+  "expected": [
+    {
+      "courses_dept": "adhe"
+    },
+    {
+      "courses_dept": "adhe"
+    },
+    {
+      "courses_dept": "adhe"
+    },
+    {
+      "courses_dept": "adhe"
+    },
+    {
+      "courses_dept": "adhe"
+    },
+    {
+      "courses_dept": "adhe"
+    },
+    {
+      "courses_dept": "adhe"
+    },
+    {
+      "courses_dept": "adhe"
+    },
+    {
+      "courses_dept": "adhe"
+    },
+    {
+      "courses_dept": "adhe"
+    },
+    {
+      "courses_dept": "adhe"
+    },
+    {
+      "courses_dept": "adhe"
+    },
+    {
+      "courses_dept": "adhe"
+    },
+    {
+      "courses_dept": "adhe"
+    },
+    {
+      "courses_dept": "adhe"
+    },
+    {
+      "courses_dept": "bmeg"
+    },
+    {
+      "courses_dept": "bmeg"
+    },
+    {
+      "courses_dept": "cnps"
+    },
+    {
+      "courses_dept": "cnps"
+    },
+    {
+      "courses_dept": "cpsc"
+    },
+    {
+      "courses_dept": "cpsc"
+    },
+    {
+      "courses_dept": "crwr"
+    },
+    {
+      "courses_dept": "crwr"
+    },
+    {
+      "courses_dept": "crwr"
+    },
+    {
+      "courses_dept": "crwr"
+    },
+    {
+      "courses_dept": "crwr"
+    },
+    {
+      "courses_dept": "crwr"
+    },
+    {
+      "courses_dept": "crwr"
+    },
+    {
+      "courses_dept": "econ"
+    },
+    {
+      "courses_dept": "econ"
+    },
+    {
+      "courses_dept": "edcp"
+    },
+    {
+      "courses_dept": "edcp"
+    },
+    {
+      "courses_dept": "epse"
+    },
+    {
+      "courses_dept": "epse"
+    },
+    {
+      "courses_dept": "epse"
+    },
+    {
+      "courses_dept": "kin"
+    },
+    {
+      "courses_dept": "kin"
+    },
+    {
+      "courses_dept": "kin"
+    },
+    {
+      "courses_dept": "math"
+    },
+    {
+      "courses_dept": "math"
+    },
+    {
+      "courses_dept": "mtrl"
+    },
+    {
+      "courses_dept": "mtrl"
+    },
+    {
+      "courses_dept": "mtrl"
+    },
+    {
+      "courses_dept": "musc"
+    },
+    {
+      "courses_dept": "musc"
+    },
+    {
+      "courses_dept": "musc"
+    },
+    {
+      "courses_dept": "musc"
+    },
+    {
+      "courses_dept": "musc"
+    },
+    {
+      "courses_dept": "musc"
+    },
+    {
+      "courses_dept": "nurs"
+    },
+    {
+      "courses_dept": "nurs"
+    },
+    {
+      "courses_dept": "obst"
+    },
+    {
+      "courses_dept": "psyc"
+    },
+    {
+      "courses_dept": "psyc"
+    },
+    {
+      "courses_dept": "rhsc"
+    },
+    {
+      "courses_dept": "sowk"
+    }
+  ]
+}

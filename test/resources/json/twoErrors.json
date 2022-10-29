@@ -1,0 +1,30 @@
+{
+  "title": "twoErrors",
+  "input": {
+    "WHERE": {
+      "OR": [
+        {
+          "AND": [
+            {
+              "GT": {
+                "courses__avg": 90
+              }
+            },
+            {
+              "IS": {
+                "courses_dept": "adhe"
+              }
+            }
+          ]
+        },
+        {
+          "EQ": {
+            "courses_avg": 95
+          }
+        }
+      ]
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

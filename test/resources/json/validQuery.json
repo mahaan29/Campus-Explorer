@@ -1,0 +1,47 @@
+
+{
+  "title": "Valid query which has different data",
+  "input": {
+    "WHERE": {
+      "OR": [
+        {
+          "AND": [
+            {
+              "GT": {
+                "courses_avg": 98
+              }
+            },
+            {
+              "IS": {
+                "courses_dept": "cpsc"
+              }
+            }
+          ]
+        },
+        {
+          "EQ": {
+            "courses_avg": 98
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": false,
+  "expected": [
+    {
+      "courses_dept": "crwr",
+      "courses_avg": 98
+    },
+    {
+      "courses_dept": "crwr",
+      "courses_avg": 98
+    }
+  ]
+}

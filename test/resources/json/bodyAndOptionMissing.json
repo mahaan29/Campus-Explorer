@@ -1,0 +1,6 @@
+{
+  "title": "bodyAndOptionMissing",
+  "input": {},
+  "errorExpected": true,
+  "expected": "InsightError"
+}

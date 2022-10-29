@@ -1,0 +1,20 @@
+{
+  "title": "multipleQuery",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "course_avg": 90
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

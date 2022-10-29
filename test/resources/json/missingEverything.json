@@ -1,0 +1,6 @@
+{
+  "title": "Should return true",
+  "input": {},
+  "errorExpected": true,
+  "expected": "InsightError"
+}
